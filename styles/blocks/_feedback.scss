@@ -1,0 +1,43 @@
+.feedback {
+  margin-top: var(--margin-block-desktop1);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background:
+    url('/images/feedback/decor-feedback.svg'),
+    var(--color-neutral-greyscale20);
+  background-repeat: no-repeat;
+  background-position: top left;
+  border-radius: 72px;
+  position: relative;
+  z-index: 1;
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 48px;
+  }
+
+  &__picture {
+    border-radius: 32px;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__subheading {
+    margin-bottom: 24px;
+  }
+
+  &__inner {
+    max-width: 500px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 8px;
+    column-gap: 6px;
+
+  }
+}

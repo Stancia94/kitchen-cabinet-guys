@@ -1,0 +1,18 @@
+.input {
+  padding: 12px 16px;
+  border: 1px solid #D9D9D9;
+  border-radius: 16px;
+  background-color: var(--color-neutral-greyscale0);
+  color: var(--color-neutral-greyscale60);
+  width: 100%;
+  font-size: 16px;
+
+  &::placeholder {
+    color: var(--color-neutral-greyscale60);
+  }
+
+  &-textarea {
+    resize: none;
+    height: 122px;
+  }
+}

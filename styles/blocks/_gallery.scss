@@ -1,0 +1,62 @@
+.gallery {
+  margin-top: var(--margin-block-desktop1);
+  margin-bottom: var(--margin-block-desktop1);
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: var(--color-neutral-greyscale20);
+  background:
+    url('/images/gallery/decor.svg'),
+    var(--color-neutral-greyscale80);
+  background-repeat: no-repeat;
+  background-position: right;
+  border-radius: 72px;
+  position: relative;
+  overflow: hidden;
+
+  &__title {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    max-width: 745px;
+
+    p {
+      margin-bottom: 32px;
+    }
+
+  }
+
+
+
+  &__slide {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 24px;
+
+    img {
+      width: 45%;
+      border-radius: 30px;
+    }
+  }
+
+  &__interface {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    a {
+      margin-right: auto;
+    }
+
+    .left {
+      margin-right: 14px;
+    }
+  }
+
+  &__link {
+    color: var(--color-neutral-greyscale20);
+  }
+}

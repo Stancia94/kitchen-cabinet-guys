@@ -1,0 +1,38 @@
+.header {
+  background-color: var(--color-neutral-greyscale0);
+  border-radius: 0 0 48px 48px;
+  position: sticky;
+  top: 0;
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 10;
+
+  &__logo {
+    margin-right: 25px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: 15px 43px;
+    justify-content: space-between;
+  }
+
+  &__nav {
+
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+  }
+
+  &__button {
+    align-self: center;
+    margin-left: 24px;
+  }
+
+  &__number {
+    color: var(--color-main-orange);
+    margin-left: 15px;
+  }
+
+}

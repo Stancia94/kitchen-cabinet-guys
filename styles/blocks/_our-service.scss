@@ -1,0 +1,50 @@
+.our-service {
+  background-color: var(--color-neutral-greyscale20);
+  border-radius: 72px;
+  padding-top: 95px;
+  padding-bottom: 106px;
+  margin-bottom: var(--margin-block-desktop1);
+
+  &__title {
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  &__card {
+    background-color: var(--color-neutral-greyscale0);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 32px;
+    max-height: 466px;
+
+    &:is(:not(:last-child)) {
+      margin-bottom: 16px;
+    }
+
+
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 502px;
+      row-gap: 16px;
+      margin-bottom: 32px;
+    }
+
+    &-subheading {
+      margin-bottom: 18px;
+    }
+
+  }
+
+}

@@ -1,0 +1,36 @@
+.testimonials {
+  margin-top: var(--margin-block-desktop1);
+  margin-bottom: var(--margin-block-desktop1);
+
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 44px;
+  }
+
+  &__text {
+    max-width: 746px;
+  }
+
+  &__comments {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 24px;
+  }
+
+  &__card {
+    background-color: var(--color-neutral-greyscale10);
+    padding: 40px;
+    max-width: 416px;
+    border-radius: 32px;
+
+    &-stars {
+      margin-bottom: 32px;
+    }
+
+    &-text {
+      margin-bottom: 24px;
+    }
+  }
+}
