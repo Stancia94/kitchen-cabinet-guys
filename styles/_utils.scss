@@ -1,23 +1,55 @@
-  [class*=__container] {
-    padding: 0 72px;
-    margin: 0 auto;
+@use './media' as *;
+
+[class*=__container] {
+  padding: 0 var(--padding-container-desktop-x);
+  margin: 0 auto;
+
+  @include tablet-mini {
+    padding: 0 var(--padding-container-tablet-x);
   }
 
+  @include phone-large {
+    padding: 0 var(--padding-container-mobile-x);
 
-
-  .visually-hidden {
-    position: absolute !important;
-    width: 1px !important;
-    height: 1px !important;
-    margin: -1px !important;
-    border: 0 !important;
-    padding: 0 !important;
-    white-space: nowrap !important;
-    clip-path: inset(100%) !important;
-    clip: rect(0 0 0 0) !important;
-    overflow: hidden !important;
   }
 
-  .column-size-2 {
-    grid-column: 1/3;
+}
+
+
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  white-space: nowrap !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+}
+
+.column-size-2 {
+  grid-column: 1/3;
+}
+
+.column-size-1-phone-large {
+  @include phone-large {
+    grid-column: 1/1;
   }
+}
+
+.interface {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+
+  a {
+    margin-right: auto;
+  }
+
+  .left {
+    margin-right: 14px;
+  }
+}

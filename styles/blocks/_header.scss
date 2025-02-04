@@ -1,3 +1,5 @@
+@use '../media' as *;
+
 .header {
   background-color: var(--color-neutral-greyscale0);
   border-radius: 0 0 48px 48px;
@@ -7,8 +9,22 @@
   font-weight: 600;
   z-index: 10;
 
+  @include phone-large {
+    border-radius: 0 0 var(--border-radius-8) var(--border-radius-8);
+  }
+
   &__logo {
     margin-right: 25px;
+
+    svg {
+      width: inherit;
+      height: inherit;
+    }
+
+    @include phone-large {
+      width: 156px;
+      height: 38px;
+    }
   }
 
   &__container {
@@ -16,23 +32,70 @@
     align-items: center;
     padding: 15px 43px;
     justify-content: space-between;
+
+    @include phone-large {
+      padding: 9px 16px;
+    }
+
+
   }
 
   &__nav {
-
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    margin-right: 8px;
     column-gap: 15px;
+    row-gap: 5px;
+
+    @media (max-width:880px) {
+      display: none;
+    }
   }
 
   &__button {
     align-self: center;
-    margin-left: 24px;
+    text-wrap: nowrap;
+
+    @media (max-width:1364px) {
+      padding: 16px;
+    }
+
+    @include desktop-medium {
+      flex-direction: column;
+    }
+
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+
+    @media (max-width:1036px) {
+      flex-direction: column;
+      row-gap: 8px;
+    }
+
+    @media (max-width:880px) {
+      display: none;
+    }
   }
 
   &__number {
     color: var(--color-main-orange);
-    margin-left: 15px;
+    text-wrap: nowrap;
+
   }
 
+  &__tel-burger {
+    display: none;
+
+    @media (max-width:880px) {
+      display: flex;
+      align-items: center;
+      column-gap: 8px;
+    }
+  }
 }

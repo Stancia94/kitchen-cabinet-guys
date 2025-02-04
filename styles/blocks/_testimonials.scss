@@ -1,12 +1,26 @@
+@use '../media' as *;
+@use '../mixins' as *;
+
 .testimonials {
-  margin-top: var(--margin-block-desktop1);
-  margin-bottom: var(--margin-block-desktop1);
+  margin-top: var(--margin-desktop1-y);
+  margin-bottom: var(--margin-desktop1-y);
+
+  @include tablet-medium {
+    margin-top: var(--margin-mobile1-y);
+    margin-bottom: var(--margin-mobile1-y);
+  }
+
+  &__container {
+    overflow-x: hidden;
+  }
 
   &__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 44px;
+    gap: 16px;
+    flex-wrap: wrap;
   }
 
   &__text {
@@ -15,22 +29,62 @@
 
   &__comments {
     display: flex;
-    justify-content: space-around;
-    column-gap: 24px;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    transition: all 0.6s ease;
+
+    @media (min-width:$desktop-large) {
+      justify-content: space-around;
+    }
   }
 
   &__card {
     background-color: var(--color-neutral-greyscale10);
     padding: 40px;
+    min-width: 343px;
     max-width: 416px;
-    border-radius: 32px;
+    border-radius: var(--border-radius-32);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    @include tablet-medium {
+      padding: 24px;
+    }
 
     &-stars {
       margin-bottom: 32px;
+
+      @include tablet-medium {
+        order: 0;
+        margin-bottom: 24px;
+      }
     }
 
     &-text {
-      margin-bottom: 24px;
+      padding-bottom: 24px;
+      margin-bottom: auto;
+
+      @include tablet-medium {
+        order: 3;
+        font-size: 16px;
+        padding-bottom: 0px;
+      }
+    }
+
+    &-author {
+      @include tablet-medium {
+        order: 2;
+        font-size: 14px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  &__interface {
+    @media (min-width:1165px) {
+      display: none;
     }
   }
 }
