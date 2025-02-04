@@ -1,16 +1,71 @@
-// document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
+  const modalButtons1 = document.querySelectorAll('.button-link-modal');
+
+  modalButtons1.forEach((elem) => {
+    elem.addEventListener('click', () => {
+      if (elem.classList.contains('active')) {
+        elem.classList.remove('active');
+      } else {
+        elem.classList.add('active');
+      }
+    })
+  })
+
+  const modalButtonsServices = document.querySelector('.service');
+  const mobileOverlayNav = document.querySelector('.mobile-overlay__nav');
+
+  modalButtonsServices.addEventListener('click', () => {
+    mobileOverlayNav.innerHTML =
+      `
+  <li class="mobile-overlay__nav-item button-back">Back to the menu
+  </li>
+  <li class="mobile-overlay__nav-item ">
+    Cabinet Refacing
+  </li>
+  <li class="mobile-overlay__nav-item ">Cabinet Doors Replacement
+  </li>
+  <li class="mobile-overlay__nav-item ">Thermofoil Cabinet Door Repair
+  </li>
+  <li class="mobile-overlay__nav-item ">Decorative Wall Panels
+  </li>
+  <li class="mobile-overlay__nav-item ">View All Services</li>
+  `;
+    const modalButtonBack = document.querySelector('.button-back')
+    modalButtonBack.addEventListener('click', () => {
+      mobileOverlayNav.innerHTML =
+        `
+      <li class="mobile-overlay__nav-item button-link-modal2 service">
+      Services
+      </li>
+      <li class="mobile-overlay__nav-item button-link-modal2">
+        Commercial
+      </li>
+      <li class="mobile-overlay__nav-item button-link-modal2">Gallery
+      </li>
+      <li class="mobile-overlay__nav-item button-link-modal2">About Us
+      </li>
+      <li class="mobile-overlay__nav-item button-link-modal2">Areas We
+        Serve
+      </li>
+      <li class="mobile-overlay__nav-item button-link-modal2">Contact
+      Us</li>
+  `;
+    })
+  });
 
 
-//   let widthViewPort = window.innerWidth;
-//   let arrayTestimonials = document.querySelectorAll('.testimonials__card');
-//   let widthCard = parseInt(getComputedStyle(arrayTestimonials[0]).width)
-//   let counter = arrayTestimonials.length - 1;
+  const mobileOverlay = document.getElementById('mobileOverlay');
+  const openOverlayMobile = document.querySelector('.button-burger');
+  const closeOverlayMobile = document.querySelector('.button-burger-close');
 
-//   window.addEventListener('resize', () => {
-
-//     if (widthCard * arrayTestimonials.length > widthViewPort && counter > 0) {
-//       arrayTestimonials[counter].style.display = 'none';
-//       counter--;
-//     }
-//   });
-// });
+  openOverlayMobile.addEventListener('click', () => {
+    mobileOverlay.showModal();
+    mobileOverlay.style.display = 'flex'
+    this.body.style.overflow = 'hidden';
+  });
+  closeOverlayMobile.addEventListener('click', () => {
+    mobileOverlay.close();
+    mobileOverlay.style.display = 'none'
+    this.body.style.overflow = 'visible';
+  });
+});

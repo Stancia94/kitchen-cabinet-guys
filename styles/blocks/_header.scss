@@ -40,7 +40,9 @@
 
   }
 
-  &__nav {
+  &__nav {}
+
+  &__list {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -48,6 +50,7 @@
     margin-right: 8px;
     column-gap: 15px;
     row-gap: 5px;
+    z-index: 11;
 
     @media (max-width:880px) {
       display: none;

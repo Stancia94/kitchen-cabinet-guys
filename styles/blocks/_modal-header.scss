@@ -1,0 +1,12 @@
+.modal-header {
+  display: none;
+  flex-direction: column;
+  row-gap: 16px;
+  padding: 32px;
+  background-color: var(--color-neutral-greyscale20);
+  position: absolute;
+  top: 60px;
+  left: -20px;
+  width: 333px;
+  border-radius: 0 0 24px 24px;
+}

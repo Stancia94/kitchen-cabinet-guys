@@ -100,7 +100,36 @@
       top: 20px;
       left: 13px;
     }
+  }
 
+  &-burger-close {
+    height: 41px;
+    width: 41px;
+    border-radius: 50%;
+    background-color: var(--color-main-orange);
+    cursor: pointer;
+    position: relative;
+
+    &::after,
+    &::before {
+      display: block;
+      position: absolute;
+      content: "";
+      width: 1px;
+      height: 16px;
+      top: 13px;
+      right: 20px;
+      background-color: var(--color-neutral-greyscale0);
+      border-radius: 16px;
+    }
+
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+    }
   }
 }
 
@@ -109,3 +138,80 @@
 }
 
 .left {}
+
+.button-link-modal {
+  padding-right: 18px;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url('../images/icon/modal-header-icon.svg');
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+}
+
+.button-link-modal2 {
+  padding-right: 18px;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url('/images/icon/arrow-black.svg');
+    background-size: cover;
+    position: absolute;
+    top: 36%;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    transform: rotate(180deg);
+  }
+}
+
+
+
+.active {
+  transition: all 0.3s;
+  color: var(--color-main-orange);
+
+  &::after {
+    content: '';
+    background-image: url('/images/icon/modal-header-icon-2.svg');
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    right: 0;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+  }
+
+  .modal-header {
+    display: flex;
+    color: var(--color-main-black);
+  }
+}
+
+.button-back {
+  padding-left: 18px;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-image: url('../images/icon/modal-header-icon.svg');
+    background-size: cover;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    rotate: (90deg);
+  }
+}
