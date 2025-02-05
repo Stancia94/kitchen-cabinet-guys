@@ -39,6 +39,9 @@
     row-gap: 24px;
     border-radius: var(--border-radius-32);
     max-width: 1500px;
+    transition: transform 1s ease, opacity 1s ease;
+    opacity: 0;
+    transform: translateX(-100%);
 
     @media (max-width:1280px) {
       width: min-content;
