@@ -22,7 +22,10 @@
 
   }
 
-  &__nav {}
+  &__nav {
+    margin-bottom: auto;
+
+  }
 
   &__list {
     font-size: 24px;
@@ -31,7 +34,6 @@
     row-gap: 16px;
     padding-top: 42px;
     align-self: flex-start;
-    margin-bottom: auto;
 
     &-item {
       position: relative;

@@ -211,7 +211,8 @@
         <h2 class="our-service__title">Our Services</h2>
         <article class="our-service__card " id="cabinetRefacing">
           <img class="our-service__card-img" loading="lazy"
-            src="images/our-service/our-service-card1.jpg"
+            data-src="images/our-service/our-service-card1.jpg"
+            src="images/wind.svg"
             alt="An example of a kitchen cabinet conversion">
           <div class="our-service__card-inner">
             <p class="our-service__card-subheading p--subheading">
@@ -251,12 +252,14 @@
               More</button>
           </div>
           <img class="our-service__card-img"
-            src="images/our-service/our-service-card2.jpg"
-            alt="Updated cabinet doors" loading="lazy">
+            data-src="images/our-service/our-service-card2.jpg"
+            src="images/wind.svg" alt="Updated cabinet doors"
+            loading="lazy">
         </article>
         <article class="our-service__card" id="thermofoil">
           <img class="our-service__card-img"
-            src="images/our-service/our-service-card3.jpg"
+            data-src="images/our-service/our-service-card3.jpg"
+            src="images/wind.svg"
             alt="The result of repairing cabinet doors made of thermoplastic film"
             loading="lazy">
           <div class="our-service__card-inner">
@@ -296,21 +299,27 @@
         </div>
         <div class="gallery__slider gallerySlider">
           <div class="gallery__slide card">
-            <img src="images/gallery/before.jpg" loading="lazy"
+            <img data-src="images/gallery/before.jpg"
+              src="images/wind.svg" loading="lazy"
               alt="Kitchen before refacing">
-            <img src="images/gallery/after.jpg" loading="lazy"
+            <img data-src="images/gallery/after.jpg"
+              src="images/wind.svg" loading="lazy"
               alt="Kitchen after refacing">
           </div>
           <div class="gallery__slide card">
-            <img src="images/gallery/before.jpg" loading="lazy"
+            <img data-src="images/gallery/before.jpg"
+              src="images/wind.svg" loading="lazy"
               alt="Kitchen before refacing">
-            <img src="images/gallery/after.jpg" loading="lazy"
+            <img data-src="images/gallery/after.jpg"
+              src="images/wind.svg" loading="lazy"
               alt="Kitchen after refacing">
           </div>
           <div class="gallery__slide card">
-            <img src="images/gallery/before.jpg" loading="lazy"
+            <img data-src="images/gallery/before.jpg"
+              src="images/wind.svg" loading="lazy"
               alt="Kitchen before refacing">
-            <img src="images/gallery/after.jpg" loading="lazy"
+            <img data-src="images/gallery/after.jpg"
+              src="images/wind.svg" loading="lazy"
               alt="Kitchen after refacing">
           </div>
         </div>
@@ -443,17 +452,18 @@
             kitchen?
             Contact us today to get started with your free estimate!
           </p>
-          <form action="" class="feedback__form" method="post">
+          <form action="" class="feedback__form" method="get"
+            id="formFeedback">
             <label for="firstName">
               <span class="visually-hidden">Enter First Name</span>
               <input class="input" type="text" id="firstName"
-                placeholder="First Name">
+                placeholder="First Name" required>
             </label>
 
             <label for="lastName">
               <span class="visually-hidden"> Enter Last Name</span>
               <input class="input" type="text" id="lastName"
-                placeholder="Last Name">
+                placeholder="Last Name" required>
             </label>
 
             <label for="email">
@@ -465,14 +475,14 @@
             <label for="phone">
               <span class="visually-hidden">Enter Phone</span>
               <input class="input" type="tel" id="phone"
-                placeholder="Phone">
+                placeholder="Phone" required>
             </label>
 
             <label class="column-size-2 column-size-1-phone-large"
               for="adress">
               <span class="visually-hidden">Enter adress</span>
               <input class="input" type="text" id="adress"
-                placeholder="Address">
+                placeholder="Address" required>
             </label>
 
             <select
@@ -563,11 +573,11 @@
         </div>
         <div class="footer__brought-to-you">
           <p>Brought to you by</p>
-          <img src="images/footer/Thermoflip.png"
-            alt="thermoflip quality mark">
+          <img data-src="images/footer/Thermoflip.png"
+            src="images/wind.svg" alt="thermoflip quality mark">
           <img width="214" height="50"
-            src="images/footer/accreditations.png"
-            alt="company accreditations">
+            data-src="images/footer/accreditations.png"
+            src="images/wind.svg" alt="company accreditations">
         </div>
       </div>
       <div class="footer__links">
@@ -712,8 +722,11 @@
       Estimate</button>
   </dialog>
 
+  <script src="js/lazyload.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/main.js" type="module"></script>
+  <script src="js/main.js"></script>
+  <script src="js/localbusiness.json"
+    type="application/ld+json"></script>
 </body>
 
 </html>

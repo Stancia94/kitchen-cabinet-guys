@@ -490,14 +490,18 @@ p {
   font-size: 16px;
 }
 .input::-moz-placeholder {
-  color: var(--color-neutral-greyscale60);
+  color: currentColor;
 }
 .input::placeholder {
-  color: var(--color-neutral-greyscale60);
+  color: currentColor;
 }
 .input-textarea {
   resize: none;
   height: 122px;
+}
+.input:user-invalid {
+  color: #D73333;
+  border-color: currentColor;
 }
 
 .header {
@@ -985,6 +989,7 @@ p {
   justify-content: space-around;
   -moz-column-gap: 48px;
        column-gap: 48px;
+  align-items: center;
 }
 .feedback__picture {
   border-radius: var(--border-radius-32);
@@ -1160,6 +1165,9 @@ p {
   align-items: center;
   justify-content: space-between;
 }
+.mobile-overlay__nav {
+  margin-bottom: auto;
+}
 .mobile-overlay__list {
   font-size: 24px;
   display: inline-flex;
@@ -1167,7 +1175,6 @@ p {
   row-gap: 16px;
   padding-top: 42px;
   align-self: flex-start;
-  margin-bottom: auto;
 }
 .mobile-overlay__list-item {
   position: relative;

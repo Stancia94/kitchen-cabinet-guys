@@ -68,4 +68,17 @@ document.addEventListener('DOMContentLoaded', function () {
     mobileOverlay.style.display = 'none'
     this.body.style.overflow = 'visible';
   });
+
+  const formFeedback = document.getElementById('formFeedback');
+  formFeedback.addEventListener('submit', (event) => {
+    event.preventDefault();
+    const formData = new FormData(formFeedback);
+    const feedBack = document.querySelector('.feedback__inner')
+    feedBack.innerHTML =
+      `
+        <h2 class="feedback__title">Thank you!</h2>
+          <p class="feedback__subheading p--m">Your message has been submitted
+          </p>
+    `;
+  })
 });

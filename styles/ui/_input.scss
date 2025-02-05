@@ -8,11 +8,16 @@
   font-size: 16px;
 
   &::placeholder {
-    color: var(--color-neutral-greyscale60);
+    color: currentColor;
   }
 
   &-textarea {
     resize: none;
     height: 122px;
+  }
+
+  &:user-invalid {
+    color: #D73333;
+    border-color: currentColor;
   }
 }

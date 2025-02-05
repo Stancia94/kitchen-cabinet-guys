@@ -1,0 +1,87 @@
+{
+  "@context": "https://schema.org",
+  "@type": "HomeImprovementContractor",
+  "name": "Kitchen Cabinet Guys",
+  "image": "logo.svg",
+  "priceRange": "$$",
+  "telephone": "+1-800-809-7197",
+  "email": "contact@kitchencabinetguys.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "245 W. Roosevelt Rd 4 Unit 29",
+    "addressLocality": "West Chicago",
+    "addressRegion": "IL",
+    "postalCode": "60185",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 41.8826,
+    "longitude": -88.2033
+  },
+  "url": "https://www.kitchencabinetguys.com",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    "https://www.facebook.com/kitchencabinetguys",
+    "https://www.yelp.com/biz/kitchen-cabinet-guys-chicago"
+  ],
+  "serviceArea": {
+    "@type": "State",
+    "name": "Illinois"
+  },
+  "description": "Family-owned kitchen cabinet refacing and remodeling company offering cabinet renewal services with 70% savings compared to replacement",
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "name": "Cabinet Refacing",
+      "description": "Transform existing cabinets with new veneers and hardware"
+    },
+    {
+      "@type": "Offer",
+      "name": "Cabinet Door Replacement",
+      "description": "Custom-made replacement doors and drawer fronts"
+    },
+    {
+      "@type": "Offer",
+      "name": "Thermofoil Repair",
+      "description": "Professional repair of peeling thermofoil cabinet doors"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.9",
+    "bestRating": "5",
+    "ratingCount": "48"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": "Christopher Torre",
+      "reviewBody": "THE Kitchen Cabinet Guys ARE GREAT! HIGHLY RECOMMENDED! I found them on the Web and they delivered excellent service",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": "Michael Jason",
+      "reviewBody": "Andre and the team did a stunning transformation of my kitchen, increasing home value by $30k",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    }
+  ]
+}
