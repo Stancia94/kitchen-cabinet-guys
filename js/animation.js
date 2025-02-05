@@ -1,7 +1,7 @@
 // настройки
 const optionsCallback = {
   root: null,
-  rootMargin: '400px 300px 20px 200px',
+  rootMargin: '400px 1000px 20px 1000px',
   threshold: 0.5
 }
 

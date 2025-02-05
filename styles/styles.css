@@ -779,7 +779,7 @@ p {
   row-gap: 24px;
   border-radius: var(--border-radius-32);
   max-width: 1500px;
-  transition: transform 1s ease, opacity 1s ease;
+  transition: transform 1.5s ease, opacity 1s ease;
   opacity: 0;
   transform: translateX(-100%);
 }
