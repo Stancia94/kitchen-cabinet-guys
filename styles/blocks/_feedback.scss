@@ -6,7 +6,7 @@
   @include fluid-padding-top(100, 50);
   @include fluid-padding-bot(100, 50);
   background:
-    url('/images/feedback/decor-feedback.svg'),
+    url('../images/feedback/decor-feedback.svg'),
     var(--color-neutral-greyscale20);
   background-repeat: no-repeat;
   background-position: top left;
