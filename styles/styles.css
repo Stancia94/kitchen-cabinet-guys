@@ -96,21 +96,25 @@ a {
   font-family: "Manrope";
   src: local("Manrope-Medium"), url("fonts/Manrope-Medium.woff2") format("woff2"), url("fonts/Manrope-Medium.woff") format("woff"), url("fonts/Manrope-Medium.ttf") format("ttf");
   font-weight: 500;
+  font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
   src: local("Manrope-SemiBold"), url("fonts/Manrope-SemiBold.woff2") format("woff2"), url("fonts/Manrope-SemiBold.woff") format("woff"), url("fonts/Manrope-SemiBold.ttf") format("ttf");
   font-weight: 600;
+  font-display: swap;
 }
 @font-face {
   font-family: "Manrope";
   src: local("Manrope-Bold"), url("fonts/Manrope-Bold.woff2") format("woff2"), url("fonts/Manrope-Bold.woff") format("woff"), url("fonts/Manrope-Bold.ttf") format("ttf");
   font-weight: 700;
+  font-display: swap;
 }
 @font-face {
   font-family: "RedHatDisplay";
   src: local("RedHatDisplay-Regular"), url("fonts/RedHatDisplay-Regular.woff2") format("woff2"), url("fonts/RedHatDisplay-Regular.woff") format("woff"), url("fonts/RedHatDisplay-Regular.ttf") format("ttf");
   font-weight: 400;
+  font-display: swap;
 }
 :root {
   --color-main-orange: #F37021;
@@ -612,7 +616,7 @@ p {
   content: "";
   height: 689px;
   width: 100%;
-  background-image: url("../images/heading/heading-background.png");
+  background-image: url("../images/heading/heading-bg.jpg");
   background-position-x: center;
   background-size: cover;
   background-repeat: no-repeat;
